@@ -55,7 +55,7 @@ If given storage do not support expiration you can use `expiresAt` option
 const instance = new MyClass('foo', 'bar');
 store.setItem('somekey', instace, { expiresAt: Date.now() + 2000 });
 
-let restored = store.getItem('somekey');
+let restored = store.getItem('somekey'); 
 console.log(restored instanceof MyClass); // true
 
 setTimeout(() => {
