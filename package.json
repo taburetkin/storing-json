@@ -2,6 +2,7 @@
 	"name": "jsonws",
 	"version": "1.0.0",
 	"description": "allows to store json data in a string key/value store",
+  "keywords": ["localstorage", "json-storage", "serialization"],
 	"main": "index.js",
 	"repository": "https://github.com/taburetkin/jsonws.git",
 	"author": "dimtabu <dima.taburetkin@gmail.com>",
