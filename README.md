@@ -4,7 +4,7 @@ In general was designed for using with `localStorage` and `sessionStorage` but m
 
 ![version](https://img.shields.io/github/package-json/v/taburetkin/jsonws.svg)
 [![Coverage Status](https://coveralls.io/repos/github/taburetkin/jsonws/badge.svg?branch=master)](https://coveralls.io/github/taburetkin/jsonws?branch=master)
-![Build status](https://secure.travis-ci.org/taburetkin/jsonws.svg?branch=master)
+![Build status](https://secure.travis-ci.com/taburetkin/jsonws.svg?branch=master)
 
 ## how to install
 ```
