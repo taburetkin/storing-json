@@ -1,0 +1,36 @@
+{
+	"name": "json-web-storage",
+	"version": "1.0.0",
+	"description": "allows to store json data in a string key/value store",
+	"main": "index.js",
+	"repository": "https://github.com/taburetkin/json-web-storage.git",
+	"author": "dimtabu <dima.taburetkin@gmail.com>",
+	"license": "MIT",
+	"scripts": {
+		"test-w": "mocha -w --config ./test/.mocharc.json",
+		"test": "mocha --config ./test/.mocharc.json",
+		"coverage": "nyc npm run test",
+		"coveralls": "yarn coverage && nyc --reporter=text-lcov npm run test | coveralls"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.4.4",
+		"@babel/plugin-transform-runtime": "^7.4.4",
+		"@babel/preset-env": "^7.4.4",
+		"@babel/register": "^7.4.4",
+		"@babel/runtime": "^7.4.4",
+		"backbone": "^1.4.0",
+		"backbone.marionette": "^4.1.2",
+		"chai": "^4.2.0",
+		"chai-as-promised": "^7.1.1",
+		"coveralls": "^3.0.3",
+		"cross-env": "^5.2.0",
+		"eslint": "^5.16.0",
+		"jquery": "^3.4.1",
+		"jsdom": "^15.1.1",
+		"mocha": "^6.1.4",
+		"nyc": "^14.1.0",
+		"sinon": "^7.3.2",
+		"sinon-chai": "^3.3.0",
+		"underscore": "^1.9.1"
+	}
+}

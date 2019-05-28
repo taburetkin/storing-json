@@ -1,0 +1,7 @@
+{
+	"editor.insertSpaces": true,
+	"editor.autoIndent": false,
+	"editor.detectIndentation": false,
+	"editor.tabSize": 2,
+	"prettier.eslintIntegration": true
+}
