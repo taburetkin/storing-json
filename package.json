@@ -1,6 +1,6 @@
 {
 	"name": "storing-json",
-	"version": "0.9.0",
+	"version": "1.0.0",
 	"description": "allows to store json data in a string key/value store",
   "keywords": ["localstorage", "json-storage", "serialization"],
 	"main": "index.js",
