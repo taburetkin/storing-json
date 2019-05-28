@@ -21,7 +21,10 @@ yarn add json-web-storage
 ```js
 import { JsonStorage } from 'json-web-storage';
 
-const store = new JsonStorage({ store: localStorage });
+const store = new JsonStorage({ 
+  store: localStorage,  // going to store in localStorage
+  expire: true,         // enabling support for values expiration
+});
 
 const MyClass = function(foo, bar) {
   this.foo = foo;
