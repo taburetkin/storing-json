@@ -1,10 +1,10 @@
 {
-	"name": "jsonws",
-	"version": "1.0.0",
+	"name": "storing-json",
+	"version": "0.9.0",
 	"description": "allows to store json data in a string key/value store",
   "keywords": ["localstorage", "json-storage", "serialization"],
 	"main": "index.js",
-	"repository": "https://github.com/taburetkin/jsonws.git",
+	"repository": "https://github.com/taburetkin/storing-json.git",
 	"author": "dimtabu <dima.taburetkin@gmail.com>",
 	"license": "MIT",
 	"scripts": {

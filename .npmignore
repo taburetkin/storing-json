@@ -1,0 +1,7 @@
+.nyc_output
+.vscode
+coverage
+test
+.eslintrc
+.nycrc.json
+.travis.yml

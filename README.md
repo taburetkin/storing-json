@@ -1,25 +1,25 @@
-# jsonws: Json Web Storage
+# storing-json
 Allow to store json or strongly typed data in a string key/value storage.  
 In general was designed for using with `localStorage` and `sessionStorage` but may be used with any kind of store, f.e. `redis` or any backend inmemory store.
 
-![version](https://img.shields.io/github/package-json/v/taburetkin/jsonws.svg)
-[![Coverage Status](https://coveralls.io/repos/github/taburetkin/jsonws/badge.svg?branch=master)](https://coveralls.io/github/taburetkin/jsonws?branch=master)
-![Build status](https://secure.travis-ci.org/taburetkin/jsonws.svg?branch=master)
+![version](https://img.shields.io/github/package-json/v/taburetkin/storing-json.svg)
+[![Coverage Status](https://coveralls.io/repos/github/taburetkin/storing-json/badge.svg?branch=master)](https://coveralls.io/github/taburetkin/storing-json?branch=master)
+![Build status](https://secure.travis-ci.org/taburetkin/storing-json.svg?branch=master)
 
 ## how to install
 ```
-npm i jsonws
+npm i storing-json
 ```
 
 or
 
 ```
-yarn add jsonws
+yarn add storing-json
 ```
 ## how to use
 ### common case
 ```js
-import { JsonStorage } from 'jsonws';
+import { JsonStorage } from 'storing-json';
 
 const store = new JsonStorage({ 
   store: localStorage,  // going to store in localStorage
