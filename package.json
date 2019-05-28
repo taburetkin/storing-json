@@ -1,9 +1,9 @@
 {
-	"name": "json-web-storage",
+	"name": "jsonws",
 	"version": "1.0.0",
 	"description": "allows to store json data in a string key/value store",
 	"main": "index.js",
-	"repository": "https://github.com/taburetkin/json-web-storage.git",
+	"repository": "https://github.com/taburetkin/jsonws.git",
 	"author": "dimtabu <dima.taburetkin@gmail.com>",
 	"license": "MIT",
 	"scripts": {
