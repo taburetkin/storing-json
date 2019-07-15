@@ -210,6 +210,7 @@ describe('# Storage', function() {
       store = new JsonStorage({ store: fakeStore, expire: true });
       store.setItem('expired', value, { expiresAt: Date.now() - 10 });
       store.setItem('valid', value, { expiresAt: Date.now() + 100 });
+      store.setItem('neverend', value);
     });
     it('should return undefined for expired item', function() {
       let res = store.getItem('expired');
@@ -229,6 +230,12 @@ describe('# Storage', function() {
       let res = store.getItem('valid', { expired: false });
       expect(res).to.be.eql(value);
     });
+    it('should return value if expiration was not set', async function() {
+      await waitFor(150);
+      let res = store.getItem('neverend');
+      expect(res).to.be.eql(value);
+    });
+
   });
   describe('when using async store', function() {
     const test2 = { foo: 1 };
@@ -253,6 +260,13 @@ describe('# Storage', function() {
       expect(res2).to.be.undefined;
       expect(res3).to.be.eql(test2);
     });
+    it('should return value if expiration was not set', async function() {
+      await store.setItem('neverend', true);
+      await waitFor(150);
+      let res = await store.getItem('neverend');
+      expect(res).to.be.true;
+    });
+
   });
 });
 

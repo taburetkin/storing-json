@@ -93,7 +93,8 @@ JsonStorage.prototype = {
     }
     let expKey = this.expireKeyPrefix + key;
     let expired = this.getItemSync(expKey, { expired: false });
-    return !expired || expired < Date.now();
+
+    return expired && expired < Date.now();
   },
 
   async checkExpireAsync(key, options = {}) {
@@ -102,7 +103,7 @@ JsonStorage.prototype = {
     }
     let expKey = this.expireKeyPrefix + key;
     let expired = await this.getItemAsync(expKey, { expired: false });
-    return !expired || expired < Date.now();
+    return expired && expired < Date.now();
   },
 
 
