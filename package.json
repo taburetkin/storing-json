@@ -1,8 +1,12 @@
 {
 	"name": "storing-json",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "allows to store json data in a string key/value store",
-  "keywords": ["localstorage", "json-storage", "serialization"],
+	"keywords": [
+		"localstorage",
+		"json-storage",
+		"serialization"
+	],
 	"main": "index.js",
 	"repository": "https://github.com/taburetkin/storing-json.git",
 	"author": "dimtabu <dima.taburetkin@gmail.com>",
@@ -24,8 +28,8 @@
 		"chai": "^4.2.0",
 		"chai-as-promised": "^7.1.1",
 		"coveralls": "^3.0.3",
-		"cross-env": "^5.2.0",
-		"eslint": "^5.16.0",
+		"cross-env": "^6.0.3",
+		"eslint": "^6.7.2",
 		"jquery": "^3.4.1",
 		"jsdom": "^15.1.1",
 		"mocha": "^6.1.4",
